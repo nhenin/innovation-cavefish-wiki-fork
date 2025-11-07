@@ -8,7 +8,7 @@ In parallel, the team gathered sufficient information to begin working on the **
 
 ## 🎯 Goals
 
-### Goal 1 — Establish the foundations of the Cavefish initiative and produce a first **V0.1 Work Plan** defining objectives, structure, and validation approach.
+#### Goal 1 — Establish the foundations of the Cavefish initiative and produce a first **V0.1 Work Plan** defining objectives, structure, and validation approach.
 
 - **Defining Objectives & CPS Focus**
   - Shifted focus from product readiness to CPS definition and validation planning.  
@@ -19,7 +19,7 @@ In parallel, the team gathered sufficient information to begin working on the **
   - Assigned cryptography (Ezequiel Postan / Jesus Diaz Vico) and server architecture (Will Gould).  
   - Discussed client-side verification and proof generation flows.
 
-### Goal 2 — [[SRL 2→3 | Single Service Provider Prototype — Initial Zero-Knowledge Circuit Logic and Stack]](https://github.com/input-output-hk/innovation-cavefish/milestone/1)
+#### Goal 2 — [[SRL 2→3 | Single Service Provider Prototype — Initial Zero-Knowledge Circuit Logic and Stack]](https://github.com/input-output-hk/innovation-cavefish/milestone/1)
 
 - **(Started)** Set up the *cavefish-server* project within the repository, focusing mainly on environment initialization and the early exploration of a first architectural model.  
 - **(Started)** Refactoring and streamlining the WBPS research prototype, scoping it down to retain only the Cardano-specific components.
@@ -27,7 +27,7 @@ In parallel, the team gathered sufficient information to begin working on the **
 
 ## 📄 Deliverables
 - **Cavefish Work Plan V0.1** submitted for review.  
-- Derived **GitHub Milestones** corresponding to the original JIRA objectives:  
+- Derived **GitHub Milestones** :  
   - [**SRL 1 → 2 | CPS(s), Specification & Scoped Requirements**](https://github.com/input-output-hk/innovation-cavefish/milestone/3) 
   - [**SRL 2 → 3 | Single Service Provider Prototype**](https://github.com/input-output-hk/innovation-cavefish/milestone/1)  
   - [SRL-3 → 4.5 | Cardano Testnet Multi-SP Prototype & Formal Properties](https://github.com/input-output-hk/innovation-cavefish/milestone/4)  
