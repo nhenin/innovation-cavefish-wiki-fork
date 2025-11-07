@@ -1,3 +1,4 @@
+## 🧭 Summary
 Weeks 3 and 4 focused on producing the first version of the **Cavefish Work Plan (V0.1)**.  
 During this period, several adaptations were made — notably a shift from the **BRL + SRL** dual framework toward a more **technology-centric approach**, as the initiative is being driven primarily by the Research team rather than Product.  
 
