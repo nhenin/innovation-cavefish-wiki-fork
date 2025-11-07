@@ -11,12 +11,12 @@ Following organizational updates, the team also agreed to target a **100-day dem
 
 ## 🎯 Active Milestones
 
-#### [SRL 1 → 2 | CPS(s), Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3) 
+#### 1. [SRL 1 → 2 | CPS(s), Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3) 
 
 - **Intent Representation & Observer Integration**
   - Confirmed Ledger team’s Observer timeline and compatibility with Cavefish DSL plans.
 
-#### [SRL 2 → 3 | Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/milestone/1) 
+#### 2. [SRL 2 → 3 | Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/milestone/1) 
 
 - **Cryptographic Stack Analysis**
   - Compared Groth16 vs Alternatives for setup trust, efficiency, and universality.  
@@ -25,7 +25,7 @@ Following organizational updates, the team also agreed to target a **100-day dem
   - Identified transaction parsing in SNARKs as a major bottleneck.  
   - Tested simplified “blob-of-bytes” approach with risk assessment for malicious SP cases.
 
-#### [SRL 1 | Create Workstream Briefing Pack](https://github.com/input-output-hk/innovation-cavefish/milestone/3) 
+#### 3. [SRL 1 | Create Workstream Briefing Pack](https://github.com/input-output-hk/innovation-cavefish/milestone/3) 
 
 - First draft – Workstream Briefing Pack.  
 - First draft – Explainers covering basic concepts and goals of workstream.  
