@@ -1,3 +1,5 @@
+## 🧭 Summary
+
 Weeks 6 and 7 were slower in terms of development activity, as the team participated in the **Innovation Workshop in Porto**.  
 This period focused on presenting the Cavefish initiative to the broader innovation group and syncing closely with the cryptography team.  
 Discussions centered on challenging the current stack and aligning on the next phase of development.  
