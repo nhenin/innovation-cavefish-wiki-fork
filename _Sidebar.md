@@ -1,7 +1,7 @@
 # 🐟 Cavefish Wiki
 
 ### 📖 Overview
-- [🏠 Home](https://github.com/input-output-hk/innovation-cavefish/wiki)
+- [🏠 Introduction](https://github.com/input-output-hk/innovation-cavefish/wiki)
 - [📄 About the Initiative](https://github.com/input-output-hk/innovation-cavefish/wiki#-summary)
 
 ### 🧭 Bi-Weekly Reports
