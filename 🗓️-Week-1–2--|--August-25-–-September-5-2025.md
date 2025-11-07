@@ -1,3 +1,4 @@
+## 🧭 Summary
 During the first two weeks, the **Cavefish** stream was formally launched within the **Light Client Infrastructure** program under *[Cardano Vision 2025 (IC-3)](https://static.iohk.io/ior/IOR_Mid-Year_Fundamental_Research_Report_2025.pdf)*.
 
 The focus was on establishing structure — setting up the repository, defining the Technology Validation approach, and aligning the initiative with Innovation’s governance framework.
