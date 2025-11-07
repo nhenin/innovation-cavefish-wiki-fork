@@ -9,17 +9,17 @@ During this period, the **cavefish-server** project was created to explore early
 
 ## 🎯 Goals
 
-#### Establish the foundations of the Cavefish initiative and produce a first **V0.1 Work Plan** defining objectives, structure, and validation approach.
+#### 1. Establish the foundations of the Cavefish initiative and produce a first **V0.1 Work Plan** defining objectives, structure, and validation approach.
 
 - **Intent-Based System Definition**
   - Reframed Cavefish as an *intent-based transaction framework* rather than a pure light client.  
 
-#### [SRL 1 → 2 | CPS(s), Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3)
+#### 2. [SRL 1 → 2 | CPS(s), Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3)
 
 - **Mapped CIPs** (Observer Scripts, Nested Transactions, Validation Zones) to define scope.  
 - **Clarified value of weakly blind signatures** for trustless LC–SP collaboration.
 
-#### [SRL 2 → 3 | Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/milestone/1)
+#### 3. [SRL 2 → 3 | Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/milestone/1)
 
 - **Set up the cavefish-server project** within the repository, focusing mainly on environment initialization and the early exploration of a first architectural model.  
 - **Refactored and streamlined the WBPS research prototype**, scoping it down to retain only the Cardano-specific components.
