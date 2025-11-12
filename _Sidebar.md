@@ -17,6 +17,9 @@
 - [SRL 3 → 4.5 | Cardano Testnet Multi-SP Prototype & Formal Properties](https://github.com/input-output-hk/innovation-cavefish/milestone/4)
 - [SRL 4.5 → 5 | Community Hand Off](https://github.com/input-output-hk/innovation-cavefish/milestone/5)
 
+### ⚙️ WBPS Protocol
+- [WBPS Execution Strategies](https://github.com/input-output-hk/innovation-cavefish/wiki/WBPS-Execution-Strategies)
+
 ### 🔗 References
 - [CIP #1110 – Intent-Based Transactions (PR)](https://github.com/cardano-foundation/CIPs/pull/1110)
 - [Rendered CIP Draft](https://github.com/polinavino/CIPs/blob/polina/light/CIP-%3F%3F%3F%3F/README.md)
