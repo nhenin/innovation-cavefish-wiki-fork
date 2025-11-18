@@ -19,6 +19,7 @@
 
 ### ⚙️ WBPS Protocol
 - [WBPS Execution Strategies](https://github.com/input-output-hk/innovation-cavefish/wiki/WBPS-Execution-Strategies)
+- [🐟 Computing `(x, X)` and `(r, R)` for WPBS](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%90%9F--Computing-%60(x,-X)%60-and-%60(r,-R)%60-for-WPBS)
 
 ### 🔗 References
 - [CIP #1110 – Intent-Based Transactions (PR)](https://github.com/cardano-foundation/CIPs/pull/1110)
