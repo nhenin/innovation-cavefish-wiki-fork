@@ -100,4 +100,4 @@ Together, these form a consistent, end‑to‑end execution model ready for dire
 * [3ab7574](https://github.com/input-output-hk/innovation-cavefish/commit/3ab7574460b37cc3b6d3fd073c01e60b66bd4062) — Merge remote-tracking branch 'origin/master' into wg/demo-ui *(Will Gould)*  
 * [b1ed74e](https://github.com/input-output-hk/innovation-cavefish/commit/b1ed74ef624209deaadeaa65d3730de6710acce7) — 100 day demo initial dump *(Will Gould)*  
 * [3e0d2f3](https://github.com/input-output-hk/innovation-cavefish/commit/3e0d2f3796501186791867294fccbf78dd13c8a8) — Update Logbook.md *(Nicolas Henin)*  
-* [8ec36df](https://github.com/input-output-hk/innovation-cavefish/commit/8ec36df747b7d8d34f18020c190427
+* [8ec36df](https://github.com/input-output-hk/innovation-cavefish/commit/8ec36df747b7d8d34f18020c190427) — Re-add inputs as LFS objects *(Nicolas Henin)*
