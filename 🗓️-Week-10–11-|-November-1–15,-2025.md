@@ -51,6 +51,7 @@ All components were decomposed into implementable units, validated for correctne
 
 Together, these form a consistent, end‑to‑end execution model ready for direct implementation.
 
+![single SP flow - Tx-Level Strategy](https://github.com/user-attachments/assets/dea08c3a-2141-40d1-8d95-f8e64eb12d1f)
 
 ## 🛠 Implementation Progress
 
