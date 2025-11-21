@@ -12,8 +12,7 @@ Each report below summarizes the project’s progress, deliverables, and commits
 | 📘 [**Week 5–6 \| Sep 20 – Oct 3 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-5%E2%80%936-%7C-September-20%E2%80%93October-3-2025) | Intent-based architecture adopted · WBPS wrapper design |
 | 📘 [**Week 6–7 \| Oct 4 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-6%E2%80%937-%7C-October-4-%E2%80%93-15-2025) | Halo2 adoption · Porto Workshop · 100-Day Demo planning |
 | 📘 [**Week 8–9 \| Oct 16 – 31 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-8%E2%80%939-%7C-October-16-%E2%80%93-31,-2025) | CIP-1110 submitted · Sub-project refactoring · WBPS integration |
-| 📘 [**Week 9-10 \| Nov 1 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-10%E2%80%9311-%7C-November-1%E2%80%9315,-2025) | Full Tx-Level Strategy specificied and Designed · Prototype Infra + Registration Implemented
- |
+| 📘 [**Week 9-10 \| Nov 1 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-10%E2%80%9311-%7C-November-1%E2%80%9315,-2025) | Full Tx-Level Strategy specificied and Designed · Prototype Infra + Registration Implemented |
 
 ## 🧭 Summary
 
