@@ -1,19 +1,19 @@
 
-# 🧭 Summary
+## 🧭 Summary
 
 During this period, the Cavefish initiative shifted decisively from architectural exploration to **fully specified and design-complete execution flows** for the Tx‑Level Strategy prototype.  
+
 Both SRL 1 → 2 and SRL 2 → 3 workstreams advanced in parallel, with all major components of the Single Service Provider prototype now clearly structured, documented, and ready for full implementation.
 
 We also refined the intent‑based transaction model, clarified the minimal anti‑malleability requirements for the light intent strategy, and ensured consistency across specifications, documentation, and design artefacts.
 
 The milestone ends with a cohesive specification set, converged design language, and a validated development trajectory for the prototype.
 
+## 🎯 Goals
 
-# 🎯 Goals
+### [SRL 1 → 2 | CPS(s), Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3)
 
-## SRL 1 → 2 | CPS(s), Specification & Scoped Requirements
-
-### Intent Semantics & Ledger Alignment
+#### Intent Semantics & Ledger Alignment
 
 - Continued refinement of intent semantics for Cardano.
 - Integrated insights from the exploratory intent CIP:  
@@ -21,7 +21,7 @@ The milestone ends with a cohesive specification set, converged design language,
   - https://github.com/polinavino/CIPs/blob/polina/light/CIP-%3F%3F%3F%3F/README.md
 - These insights strengthen the upcoming **Next Steps & Recommendations** deliverable.
 
-### Security & CBOR Structure Analysis
+#### Security & CBOR Structure Analysis
 
 - Clarified the minimal checks needed to prevent CBOR-level malleability in the Tx‑Level Strategy.
 - Key conclusions for the *light intent model*:  
@@ -30,16 +30,15 @@ The milestone ends with a cohesive specification set, converged design language,
   - In‑circuit checks remain limited to verifying equality outside zeroed fields.  
 - Ongoing work continues for long-term intent semantics and extended intent models.
 
+### [SRL 2 → 3 | Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/milestone/1)
 
-## SRL 2 → 3 | Tx-Level Strategy & Single Service Provider Prototype
-
-### Full Flow Specification & Design  
+#### Full Flow Specification & Design  
 **[Epic #57 — Tx-Level Strategy & Single Service Provider Prototype](https://github.com/input-output-hk/innovation-cavefish/issues/57)**
 
 The entire 7‑step WBPS ↔ Cavefish execution flow is now **fully specified and design‑complete**.  
 All components were decomposed into implementable units, validated for correctness, and prepared for backend integration.
 
-### Sub‑Issues (Specification Complete)
+##### Sub‑Issues (Specification Complete)
 
 | Sub-Issue | Description |
 |----------|-------------|
@@ -53,7 +52,7 @@ All components were decomposed into implementable units, validated for correctne
 Together, these form a consistent, end‑to‑end execution model ready for direct implementation.
 
 
-# 🛠 Implementation Progress
+## 🛠 Implementation Progress
 
 ### Backend & Prototype Logic
 
@@ -77,16 +76,16 @@ Together, these form a consistent, end‑to‑end execution model ready for dire
 - Test inputs restored under proper LFS tracking.
 - Early submission infrastructure updated for the prototype.
 
-# 📄 Deliverables
+## 📄 Deliverables
 
-## Documents
+### Documents
 
 - Updated Tx‑Level Strategy specification and design (Epic #57).  
 - Updated WBPS flow diagrams:  
   https://miro.com/app/board/uXjVI1nt2yc=/  
   Password: `caevfish12345`
 
-## Commits (November 1–15, 2025)
+### Commits (November 1–15, 2025)
 
 * [45e243a](https://github.com/input-output-hk/innovation-cavefish/commit/45e243a5f75a097646792d1abfaeadd9e5f5eab8) — Merge pull request #76 from input-output-hk/ci/cabal-fmt *(Nicolas Henin)*  
 * [85dce60](https://github.com/input-output-hk/innovation-cavefish/commit/85dce606e6985fcec21106ff66754577117bb0ff) — Fix cabal files formatting *(kayvank)*  
