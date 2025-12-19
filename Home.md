@@ -13,6 +13,8 @@ Each report below summarizes the project’s progress, deliverables, and commits
 | 📘 [**Week 6–7 \| Oct 4 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-6%E2%80%937-%7C-October-4-%E2%80%93-15-2025) | Halo2 adoption · Porto Workshop · 100-Day Demo planning |
 | 📘 [**Week 8–9 \| Oct 16 – 31 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-8%E2%80%939-%7C-October-16-%E2%80%93-31,-2025) | CIP-1110 submitted · Sub-project refactoring · WBPS integration |
 | 📘 [**Week 9-10 \| Nov 1 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-10%E2%80%9311-%7C-November-1%E2%80%9315,-2025) | Full Tx-Level Strategy specificied and Designed · Prototype Infra + Registration Implemented |
+| 📘 [**Week 12–13 \| Nov 16 – 30 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-12%E2%80%9313-%7C-November-16%E2%80%9330,-2025) | Endpoint refactor · Logging + config · WBPS keygen integration |
+| 📘 [**Week 14–15 \| Dec 1 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-14%E2%80%9315-%7C-December-1%E2%80%9315,-2025) | SP flow refactor · Tracing + config · Tests + CI tightened |
 
 ## 🧭 Summary
 
@@ -28,4 +30,4 @@ The project’s evolution is documented through:
 > 🧩 **Maintainers**:  
 > Nicolas Henin · Will Gould · Polina Vinogradova · Kayvan Kazeminejad · Jesus Diaz Vico · Pyrros Chaidos · Marc Roeschlin
 
-*(Last updated · October 2025)*
+*(Last updated · December 2025)*
