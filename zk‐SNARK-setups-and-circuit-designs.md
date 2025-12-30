@@ -87,4 +87,77 @@ This strategy implies to work at the internal hash function level. The idea is t
 
 Now, there is a sequential execution of the hash function internals (the compression) and therefore the cost is $O(N)$.
 
+# Circuit designs in Cavefish - High-level overview
 
+## Tx-level strategy with light intents
+
+Provided inputs:
+```
+private input tx_body_cbor (byte array)
+private input commitment_nonce_rho (scalar mod BabyJubJub subgroup prime)
+
+public input tx_abs_cbor (byte array)
+public input signature_nonce_comm_R (EdDSA/Ed25519 curve point provided as byte array)
+public input signature_PK_X (EdDSA/Ed25519 curve point)
+public input commitment_PK_EK (BabyJubJub curve point)
+public input commitment_C (array of 2 field elements in BN254 Fr)
+public input challenge_c (byte array of 64 bytes)
+```
+
+*Verify correctness of transaction body*
+
+Check that `tx_abs_cbor` matches the corresponding bytes in `tx_body_cbor`.
+```
+var input_ends
+for i in range(input_ends, tx_len):
+	tx_body_cbor[i] === tx_abs_cbor[i]
+```
+
+*Compute transaction id*
+
+In Cardano, what the wallet signs is the `txId`, which is the Blake2b-256 hash of `tx_body_cbor`. This is the building block where variable sized inputs (the transaction body) must be handled.
+```
+txId <== blake2b-256(tx_body_cbor)
+```
+
+*Message commitment*
+
+This phase generates the commitment of the message (i.e., `txId`) by using EC-ElGamal over BabyJubJub in ECIES mode. First, the shared secret is computed from the `commitment_PK_EK` and the `commitment_nonce_rho`. Notice that the nonce (a scalar) must lie within the prime order subgroup of BabyJubJub, which has 251 bit-length. The modulus for this subgroup is `l=2736030358979909402780800718157159386076813972158567259200215660948447373041`.
+
+```
+shared_secret <== EscalarMulAny(251)
+	- with base commitment_PK_EK
+	- with binary encoded scalar commitment_nonce_rho
+```
+
+Then, the key stream is generated from the shared secret by using a KDF, in this case based on Poseidon. Notice that, since the message to be commited is `txId`, which has 256 bit-length, it just suffices to encode it as two elements in BN254 scalar field $F_r$.
+
+```
+// Absorb 2 items (the EC point), Squeeze len items (len=2 for txId)
+key_stream[len] <== PoseidonEx(2,len)
+	- with input shared_secret
+```
+
+The last step is just aplying the OTP, which is very straightforward.
+
+```
+comm[1] <== txId_limb[1] + key_stream[1]
+comm[2] <== txId_limb[2] + key_stream[2]
+
+```
+
+*Compute the signature challenge*
+
+A Cardano transaction signature uses EdDSA algorithm, i.e., deterministic Schnorr over Ed25519. However, Cavefish currently uses the randomized version due to blind signatures. Then, it must be ensured that the scalar `signature_nonce_r` lies within the prime order subgroup of the curve Ed25519. From that, the commitment of the nonce is computed by using the base point of the curve subgroup, i.e. `base_point = (15112221349535400772501151409588531511454012693041857206046113283949847762202, 46316835694926478169428394003475163141307993866256225615783033603165251855960)`. However, the circuit is directly provided with the commitment `signature_nonce_comm_R`, i.e., $R=r*G$.
+
+The signature challenge is computed from a message that has constant size by using Sha512 algorithm (signature nonce commitment, signer’s PK and the actual message to be signed, which is `txId`).
+
+```
+msg <== R || PKSigner || txId 	// This is cte size
+challenge <== SHA-512(msg)
+
+```
+
+*Verification of the input values*
+
+It must be noticed that the value held by the UTxO inputs provided in the transaction are not verified, despite they can only come from the LC otherwise the signature will be invalid in the network. In fact, having an incorrect balance in the transaction will arise the same problem, i.e., on-chain transaction invalidation. What could be verified in-circuit and in ZK is nothing more than the correct format of the inputs, i.e., that they follow `transaction_input = [ transaction_id : $hash32, index : uint]`.
