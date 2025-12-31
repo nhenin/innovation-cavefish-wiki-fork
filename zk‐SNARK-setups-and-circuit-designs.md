@@ -87,6 +87,37 @@ This strategy implies to work at the internal hash function level. The idea is t
 
 Now, there is a sequential execution of the hash function internals (the compression) and therefore the cost is $O(N)$.
 
+#### VarLen hashing - Sha2 vs. Blake2b
+
+Since hashing works on fixed length chunks (internally padded if needed), the natural way of achieving a VarLen conditional state updating solution in a circuit is to provide the input already padded (omitting the padding step inside the circuit) and with dummy data until the maximum length supported is fulfilled. This way, the circuit will apply the compression function to each single chunk, but only those involved will contribute to the final result, achieving the desired linear cost in $N_{max}$.
+
+```
+input = [data_chunk_1 .. data_chunk_(n-1)] || [data_chunk_n_padded] || [dummy_chunks]
+```
+
+However, there is a key difference between Sha2 and Blake2b that conditions the strategy:
+
+- Sha256 adds padding at the bit-level by using a specific structure: `msg_bits||1||0..0||<msg_len>`, where the length tag is a 64-bit big-endian value containing the actual length of the message. The number of 0s in the middle are added s.t. the final padded message is a multiple of 64 bytes.
+- Blake2b adds zero padding until the message reaches a length multiple of 128 bytes. However, at each compression step, a counter that keeps track of the number of bytes already hashed is added to the state. Therefore, if the last chunk is not complete, even if its internally padded to zeroes, the last update of the counter will add less than 128 to the added value.
+
+To illustrate this:
+
+```
+# Blake2b with internal padding:
+last_block = [1, 2, 3]
+ctr = ctr + 3
+padded_last_block = [1, 2, 3, 0, 0, ..., 0]
+h = compress(h, last_block, ctr, final)
+
+# Blake2b with external padding:
+last_block = [1, 2, 3, 0, 0, ..., 0]
+ctr = ctr + 128
+padded_last_block = last_block
+h = compress(h, last_block, ctr, final)
+```
+
+From the previous, it can be seen that providing the input already padded for Sha-256 suffices, while in Blake2b, if the input is externally padded it will affect the last value of the counter added to the state. Therefore, some additional mechanism must be included such that it enforces the last update of the counter to be the correct one (according to the real number of bytes hashed) even if the message has been externally padded. This can be done by computing the remaining bytes of the last block in advance and providing that value to the compression function when it corresponds.
+
 # Circuit designs in Cavefish - High-level overview
 
 ## Tx-level strategy with light intents
@@ -161,3 +192,41 @@ challenge <== SHA-512(msg)
 *Verification of the input values*
 
 It must be noticed that the value held by the UTxO inputs provided in the transaction are not verified, despite they can only come from the LC otherwise the signature will be invalid in the network. In fact, having an incorrect balance in the transaction will arise the same problem, i.e., on-chain transaction invalidation. What could be verified in-circuit and in ZK is nothing more than the correct format of the inputs, i.e., that they follow `transaction_input = [ transaction_id : $hash32, index : uint]`.
+
+*Blake2b VarLen hash*
+
+This is a high-level pseudo-code description of the strategy to achieve $O(N_{max})$ cost for VarLen Blake2b hashing:
+
+```
+// Message = [message_full_chunks] || [message_last_chunk_padded] || [dummy_chunks]
+// Must provide as private input a selector s[N_MAX] with only 1 bit set (others must be 0)
+// Must provide as private input the actual message length m_len
+
+// Initialize state
+hash_state[N_MAX]      // The circuit will compute N_MAX states as if each of them were the last one
+hash_state[0] <-- IV
+
+// We omit the mix key phase
+
+// Strategy: compute compress for each block conditioned by being last block or not
+// The last block flag is actually the input selector s[N_MAX]
+// The offset counter (oc) must be adapted to the last block
+var last_offset = m_len mod 128
+
+for (var i = 0; i < N_MAX; i++) {
+	var oc = (1 - s[i]) * ((i+1)*128) + s[i] * last_offset
+	// CompressionF is given the offset counter and last block flag
+	compr[i] = CompressionF(oc, s[i])
+	// Adapt data structure (any low-level adaptation needed)
+	blocks[i] = ...
+	// Apply the compression function
+	compr[i].h <-- hash_state[i]
+	compr[i].m <-- blocks[i]
+	compr[i].out --> hash_state[i+1]
+}
+
+// Convert to hash words or any other format needed
+
+// Filter the desired result
+res = \sum_i hash_state[i] * s[i]
+```
