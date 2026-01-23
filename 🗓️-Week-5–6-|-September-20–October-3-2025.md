@@ -35,6 +35,14 @@ During this period, the **cavefish-server** project was created to explore early
   - [SRL-3 → 4.5 | Cardano Testnet Multi-SP Prototype & Formal Properties](https://github.com/input-output-hk/innovation-cavefish/milestone/4)  
   - [SRL-4.5 →5 | Community Hand off](https://github.com/input-output-hk/innovation-cavefish/milestone/5)
 
+### Commits (September 20–October 3, 2025)
+
+* [a5ff60e](https://github.com/input-output-hk/innovation-cavefish/commit/a5ff60e76ac8b91ff52d6c221c9e45dc095d02d4) — add consumed delta to PrepareResp, since it's needed for the client to run satisfies *(Will Gould)*
+* [7c45f9a](https://github.com/input-output-hk/innovation-cavefish/commit/7c45f9aae4a5d7d65cb905af3f1feafe33003205) — moved a bunch of probably-non-test stuff out of tests, added some convenience endpoints, attempted to further enhanced realism (contextually, at least) *(Will Gould)*
+* [daa189a](https://github.com/input-output-hk/innovation-cavefish/commit/daa189a60c961fd2edc7c53879217179e4828fa0) — Jump to definition friendly env *(Nicolas Henin)*
+* [ada334d](https://github.com/input-output-hk/innovation-cavefish/commit/ada334d5c8bb57572b9842926069091583a5b07c) — updated gitignore *(Nicolas Henin)*
+* [5bb9919](https://github.com/input-output-hk/innovation-cavefish/commit/5bb99198038ba3919f37793fbfaa9d06e18273f9) — significantly fleshed out prototype, mostly "realistic" (sans proper proving, signing etc) flow working in roundtrip test *(Will Gould)*
+
 ## 🚀 Next Steps
 
 - Prepare **Porto Workshop**.

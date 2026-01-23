@@ -76,3 +76,14 @@ CI reliability improved around babyjubjub keygen, and frontend scaffolding was t
 * [2602949](https://github.com/input-output-hk/innovation-cavefish/commit/26029492fab899ebd9783c3883647d4e5e2f8f2a) — commitment generation (#89) *(willjgould)*
 * [72e567e](https://github.com/input-output-hk/innovation-cavefish/commit/72e567e0c6a5ef71d683ce6d2f2b95ab8c957b6e) — Merge pull request #83 from input-output-hk/30/config-file *(Nicolas Henin)*
 * [25da9ea](https://github.com/input-output-hk/innovation-cavefish/commit/25da9ea7cf47c4ccbd0abc9630ae6c7ede82dcb7) — Merge pull request #82 from input-output-hk/74/logging *(Nicolas Henin)*
+
+### Issues (December 1–15, 2025)
+
+#### Closed
+* [#85](https://github.com/input-output-hk/cavefish/issues/85) — Configuration file for application config paramters
+
+
+#### Updated
+* [#85](https://github.com/input-output-hk/cavefish/issues/85) — Configuration file for application config paramters
+
+

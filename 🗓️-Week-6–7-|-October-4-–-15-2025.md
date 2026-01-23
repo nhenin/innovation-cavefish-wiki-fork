@@ -44,17 +44,14 @@ Following organizational updates, the team also agreed to target a **100-day dem
 
 ### 🧩 Commits (October 4 – 15, 2025)
 
-Below is the list of commits merged into `main` during this period:
-
-* [4d92fa3](https://github.com/input-output-hk/innovation-cavefish/commit/4d92fa3953b9f785e3836a0d650cbe78d304a5d2) — **executable** *(Will Gould)*
-* [9eff136](https://github.com/input-output-hk/innovation-cavefish/commit/9eff1360c8bbafb4acad9729bcb92aaa7d6a97cf) — **TxAbs encoding**, roundtrip test exercising REST endpoints, logbook *(Will Gould)*
-* [35ffbc9](https://github.com/input-output-hk/innovation-cavefish/commit/35ffbc9fdbbe979cab7e72c7b5cd97ee4de99e81) — updated documentation *(Nicolas Henin)*
+* [4d92fa3](https://github.com/input-output-hk/innovation-cavefish/commit/4d92fa3953b9f785e3836a0d650cbe78d304a5d2) — executable *(Will Gould)*
+* [9eff136](https://github.com/input-output-hk/innovation-cavefish/commit/9eff1360c8bbafb4acad9729bcb92aaa7d6a97cf) — TxAbs encoding, roundtrip test exercising REST endpoints, logbook *(Will Gould)*
+* [35ffbc9](https://github.com/input-output-hk/innovation-cavefish/commit/35ffbc9fdbbe979cab7e72c7b5cd97ee4de99e81) — updated doc *(Nicolas Henin)*
 * [43852f7](https://github.com/input-output-hk/innovation-cavefish/commit/43852f7e0a89f4f5b72d5d5960888da7628dd205) — restructured files and folders *(Nicolas Henin)*
-* [a755191](https://github.com/input-output-hk/innovation-cavefish/commit/a755191ba15dcf5f7b1a9d4c90e531f9b5e16233) — updated `.gitignore` *(Nicolas Henin)*
+* [a755191](https://github.com/input-output-hk/innovation-cavefish/commit/a755191ba15dcf5f7b1a9d4c90e531f9b5e16233) — git ignore updated *(Nicolas Henin)*
 * [666da78](https://github.com/input-output-hk/innovation-cavefish/commit/666da78b7bcd0cf0fcdee0dfb2951d5f4f5055f1) — added input generator *(Nicolas Henin)*
-* [0b37477](https://github.com/input-output-hk/innovation-cavefish/commit/0b374771b380b616ed078a55e65f4b1768c51c79) — update `.gitignore` for **wbps_circuit artifacts** and `node_modules` *(Nicolas Henin)*
-* [e8242ac](https://github.com/input-output-hk/innovation-cavefish/commit/e8242ac6284075e1aa3c800418a6751bd9df1535) — `make` creates a `/build` folder; all temp files are now produced in it *(Nicolas Henin)*
-
+* [0b37477](https://github.com/input-output-hk/innovation-cavefish/commit/0b374771b380b616ed078a55e65f4b1768c51c79) — Update .gitignore for wbps_circuit artifacts and node_modules *(Nicolas Henin)*
+* [e8242ac](https://github.com/input-output-hk/innovation-cavefish/commit/e8242ac6284075e1aa3c800418a6751bd9df1535) — `make` creates a /build folder and all the temp files are produced in it *(Nicolas Henin)*
 
 ## 🚀 Next Steps
 - Preparing **Work Plan for 100-days demo**.

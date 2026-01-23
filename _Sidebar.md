@@ -10,11 +10,12 @@
 - [📘 Week 5–6 | Sep 20 – Oct 3 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-5%E2%80%936-%7C-September-20%E2%80%93October-3-2025)
 - [📘 Week 6–7 | Oct 4 – 15 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-6%E2%80%937-%7C-October-4-%E2%80%93-15-2025)
 - [📘 Week 8–9 | Oct 16 – 31 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-8%E2%80%939-%7C-October-16-%E2%80%93-31,-2025)
-- [📘 Week 9-10 | Nov 1 – 15 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-10%E2%80%9311-%7C-November-1%E2%80%9315,-2025)
+- [📘 Week 10–11 | Nov 1 – 15 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-10%E2%80%9311-%7C-November-1%E2%80%9315,-2025)
 - [📘 Week 12–13 | Nov 16 – 30 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-12%E2%80%9313-%7C-November-16%E2%80%9330,-2025)
 - [📘 Week 14–15 | Dec 1 – 15 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-14%E2%80%9315-%7C-December-1%E2%80%9315,-2025)
 - [📘 Week 16–17 | Dec 16 – 31 2025](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-16%E2%80%9317-%7C-December-16%E2%80%9331,-2025)
 - [📘 Week 18–19 | Jan 1 – 15 2026](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-18%E2%80%9319-%7C-January-1%E2%80%9315,-2026)
+- [📘 Week 20–21 | Jan 16 – 31 2026](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-20%E2%80%9321-%7C-January-16%E2%80%9331%2C-2026)
 
 ### 🧩 Milestones
 - [SRL 1 → 2 | CPS Specification & Scoped Requirements](https://github.com/input-output-hk/innovation-cavefish/milestone/3)

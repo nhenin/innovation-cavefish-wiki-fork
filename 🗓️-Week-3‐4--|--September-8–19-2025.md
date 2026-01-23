@@ -34,6 +34,12 @@ In parallel, the team gathered sufficient information to begin working on the **
   - [SRL-3 → 4.5 | Cardano Testnet Multi-SP Prototype & Formal Properties](https://github.com/input-output-hk/innovation-cavefish/milestone/4)  
   - [SRL-4.5 →5 | Community Hand off](https://github.com/input-output-hk/innovation-cavefish/milestone/5) 
 
+### Commits (September 8–19, 2025)
+
+* [40c69fc](https://github.com/input-output-hk/innovation-cavefish/commit/40c69fc6c74836bc77762d47d165c15e2458a60a) — WIP scaffolding for the SP server *(Will Gould)*
+* [cb94194](https://github.com/input-output-hk/innovation-cavefish/commit/cb94194ba5199c6c8c0d08fa1c442266a43f0efe) — .gitignore *(Will Gould)*
+* [c4f35c2](https://github.com/input-output-hk/innovation-cavefish/commit/c4f35c28c49683815309a2a5df13f4e2780f6e03) — wip prototype *(Will Gould)*
+
 ## 🚀 Next Steps
 - Finalize **Solution Proposal and Validation Plan** draft.  
 - Start **CPS** and **CIP** dependency mapping.  
