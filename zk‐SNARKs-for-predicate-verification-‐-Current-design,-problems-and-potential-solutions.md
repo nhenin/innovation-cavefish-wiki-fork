@@ -231,6 +231,22 @@ The application to Cavefish would be very straightforward and would allow to use
    - This implies around `lambda=122` bits of security with BN254.
    - More bits of security could be achieved with a larger field, e.g., in BLS-318.
 
+We can provide some roughly estimated values for the prover time (cases of interest). Since the paper uses a Groth16 prover, which is linear in the size of the statement (tx size in our case), the following times are provided by the linear regression equation $t_s=0.001137*stmt_B+1.109$, obtained from the values in the paper. The setup in the paper is a *10-core Macbook running MacOS 15.6 (kernel 24.6.0), with Apple M1 Max and 32GB of memory*.
+
+| Tx size (B) | Prover time (s) |
+| --- | --- |
+| 84 `(tx_min)` | 1.20 |
+| 127 `(paper)` | 1.25 |
+| 494 `(tx_p50)` | 1.67 |
+| 508 `(paper)` | 1.69 |
+| 785 `(tx_avg)` | 2.00 |
+| 906 `(tx_p75)` | 2.14 |
+| 1326 `(tx_p90)` | 2.62 |
+| 2512 `(tx_p95)` | 3.97 |
+| 5983 `(tx_p99)` | 7.91 |
+| 8128 `(paper)` | 10.35 |
+| 15036 `(tx_max)` | 18.20 |
+
 ## :question: (C2) Handling variable length inputs
 
 zk-SNARKs rely on arithmetic circuits that must be fully evaluated in a deterministic way. This implies a set of considerations that really affect usability and performance, overall in solutions such as those from the privacy ecosystem which already are inefficient for some use cases. For example:
