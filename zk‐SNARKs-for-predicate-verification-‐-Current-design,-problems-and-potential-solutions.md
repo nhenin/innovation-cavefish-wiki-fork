@@ -1,3 +1,29 @@
+## Table of Contents
+
+- [Why zk-SNARKs](#one-why-zk-snarks)
+- [The map of zk-SNARKs](#two-the-map-of-zk-snarks)
+- [Predicates in Cavefish](#three-predicates-in-cavefish)
+  - [Light Intent Strategy](#large_blue_diamond-light-intent-strategy)
+    - [Current circuit pseudo-code](#small_orange_diamond-current-circuit-pseudo-code)
+  - [Extended Intent Strategy](#large_blue_diamond-extended-intent-strategy)
+  - [Observe Script Strategy](#large_blue_diamond-observe-script-strategy)
+- [Main challenges and potential solutions](#four-main-challenges-and-potential-solutions)
+  - [(C1) The cost of binary hashing](#question-c1-the-cost-of-binary-hashing)
+  - [(C1) Potential solutions](#heavy_check_mark-c1-potential-solutions)
+    - [Optimizations to hash implementation](#small_orange_diamond-optimizations-to-hash-implementation)
+    - [zkVMs](#small_orange_diamond-zkvms)
+    - [Folding](#small_orange_diamond-folding)
+    - [Split hashing](#small_orange_diamond-split-hashing)
+    - [Unequal hashing](#small_orange_diamond-unequal-hashing)
+  - [(C2) Handling variable length inputs](#question-c2-handling-variable-length-inputs)
+    - [The impact of setup phases](#small_orange_diamond-the-impact-of-setup-phases)
+  - [(C2) Potential solutions](#heavy_check_mark-c2-potential-solutions)
+    - [VarLen strategies in circuits](#small_orange_diamond-varlen-strategies-in-circuits)
+    - [The case of hashing](#small_orange_diamond-the-case-of-hashing)
+      - [Hashing as a black box](#small_red_triangle-example-hashing-as-a-black-box)
+      - [Hashing with conditional state updating](#small_red_triangle-example-hashing-with-conditional-state-updating)
+      - [SHA2 vs. Blake2](#small_red_triangle-example-sha2-vs-blake2)
+
 # :one: Why zk-SNARKs?
 
 The core enabler of Cavefish is a WBPS protocol that enables the LC to blindly sign a transaction built by the SP while being ensured that the transaction satisfies the requested intent. For that, WBPS relies on a zk-NArg that allows the LC to verify that the predicate is satisfied (whatever the predicate is) with overwhelming probability. The ZK part allows the SP to protect the transaction from being stolen by the LC and submitted without including the corresponding fee.
