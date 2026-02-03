@@ -26,6 +26,7 @@
 ### ⚙️ WBPS Protocol
 - [WBPS Execution Strategies](https://github.com/input-output-hk/innovation-cavefish/wiki/WBPS-Execution-Strategies)
 - [zk-SNARKs for predicate verification - Current design, problems and potential solutions](https://github.com/input-output-hk/cavefish/wiki/zk%E2%80%90SNARKs-for-predicate-verification-%E2%80%90-Current-design,-problems-and-potential-solutions)
+- [Recommendations for future steps](https://github.com/input-output-hk/cavefish/wiki/Recommendations-for-future-steps)
 
 ### 🔗 References
 - [CIP #1110 – Intent-Based Transactions (PR)](https://github.com/cardano-foundation/CIPs/pull/1110)
