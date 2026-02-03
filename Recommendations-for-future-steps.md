@@ -67,7 +67,7 @@ Despite folding is a powerful technique that certainly improves on both prover t
 
 *Setup:* WSL, i7-13620H 10-cores (2.40 GHz), 16 GB RAM
 
-- **Benchmark: SHA256 in Nova** [`n*t_f`] (Only folding steps)
+- **Benchmark: SHA256 in Nova** [`t_f`] (A single folding step for the entire SHA256 circuit)
 
 | **Num. of blocks in message** (1 block = 64B) | **Prover time** (s) |
 | --- | --- |
