@@ -86,8 +86,8 @@ Despite folding is a powerful technique that certainly improves on both prover t
 | --- | --- |
 | 0 | 2.15 |
 | 6399 | 3.04 |
-| 22783 (SHA256) | 3.45 |
-| 55551 | 4.39 |
+| 22783 | 3.45 |
+| 55551 (SHA256) | 4.39 |
 | 121087 | 6.32 |
 | 252159 | 10.33 |
 | 514303 | 16.83 |
@@ -103,3 +103,22 @@ Despite folding is a powerful technique that certainly improves on both prover t
 | 2^18 | 1.853 | 0.271 | 1.877 | 0.258 | 1.255 | 0.242 |
 | 2^19 | 3.561 | 0.544 | 3.741 | 0.505 | 2.228 | 0.404 |
 | 2^20 | 7.605 | 0.961 | 8.118 | 0.891 | 4.318 | 0.862 |
+
+- **SHA256 of a transaction: rough estimates**
+
+With the previous data, we now provide a very rough estimation about how much the prover time could be sped up with folding techniques. As stated before, we use the formula `n*t_f+t_p` and compare the times with a Groth16 prover (SnarkJs) of SHA256. Note that there is a large difference in a single folding step between original Nova's implementation and Sonobe's one.
+
+- Nova (Original) - Single folding of 1 SHA256 block = 0.065 s
+- Nova (Sonobe) - Single folding of 1 small instance ~= 0.350 s
+- Nova (Original) - SNARK compression of 1 SHA256 instance (~55388 constraints) = 4.39 s
+
+| Tx body size | Num blocks folded | Nova (Original) - Prover time (s) | Nova (Sonobe) - Prover time (s) | Groth16 prover (s) |
+| --- | --- | --- | --- | --- |
+| 84 B | 2 | 4.520 | 5.090 | 2.048 |
+| 494 B | 8 | 4.910 | 7.190 | 7.547 |
+| 785 B | 13 | 5.235 | 8.940 | 15.726 |
+| 906 B | 15 | 5.365 | 9.640 | 17.525 |
+| 1326 B | 21 | 5.755 | 11.740 | 27.591 |
+| 2512 B | 40 | 6.990 | 18.390 | OOM |
+| 5983 B | 94 | 10.500 | 37.290 | OOM |
+| 15036 B | 235 | 19.665 | 86.640 | OOM |
