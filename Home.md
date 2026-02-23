@@ -1,7 +1,18 @@
-Welcome to the **Cavefish Initiative Wiki**, part of the **Cardano Light Client Infrastructure Program** under *[Cardano Vision 2025 (IC-3)](https://static.iohk.io/ior/IOR_Mid-Year_Fundamental_Research_Report_2025.pdf)*.
+# Cavefish Wiki
 
-Cavefish is a research-to-engineering initiative focused on building the foundations of **intent-based transaction processing** and **zero-knowledge proof validation** within the Cardano ecosystem.  
-Each report below summarizes the project’s progress, deliverables, and commits for a given period — documenting the evolution from early concept to production-ready prototype.
+This wiki is the working journal for the **Cavefish A.R.C. workstream (2025-2026)**.  
+It complements the repository README and captures the execution history behind the closing report.
+
+Cavefish started from the paper **"Communication-Optimal Light Client Protocol for UTxO Ledgers"** and delivered a Cardano-compatible **v0.5 prototype** (Tx-Level Strategy, Many-Users -> Single Service Provider).  
+The stream is now paused; this wiki remains as a research and architectural record.
+
+## 🚀 Start Here
+
+- Repository context and closing report: [cavefish/Readme.md](https://github.com/input-output-hk/cavefish/blob/main/Readme.md)
+- Getting started (Haskell prototype): [prototype/README.md](https://github.com/input-output-hk/cavefish/blob/main/prototype/README.md)
+- ZK circuits and WBPS notes: [zk-wbps/README.md](https://github.com/input-output-hk/cavefish/blob/main/zk-wbps/README.md)
+- Chronological repo logbook: [Logbook.md](https://github.com/input-output-hk/cavefish/blob/main/Logbook.md)
+- Closing presentation: [video](https://drive.google.com/file/d/1fJIIsox7dxmQakhVwK-BV-sAgz5b01hV/view) / [slides](https://docs.google.com/presentation/d/1wFhgU2Thje1YqaLPowstpSTw16qzv0NXvAx5-vFaKhA)
 
 ## 📅 Bi-Weekly Reports
 
@@ -17,20 +28,17 @@ Each report below summarizes the project’s progress, deliverables, and commits
 | 📘 [**W14–15**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-14%E2%80%9315-%7C-December-1%E2%80%9315,-2025) | Dec 1–15 2025 | Demonstrate Commitment · Tests + CI tightened |
 | 📘 [**W16–17**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-16%E2%80%9317-%7C-December-16%E2%80%9331,-2025) | Dec 16–31 2025 | DemonstrateCommitment complete · ZK hashing trade-offs documented |
 | 📘 [**W18–19**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-18%E2%80%9319-%7C-January-1%E2%80%9315,-2026) | Jan 1–15 2026 | Challenge + witness generation · Circuit performance analysis |
-| 📘 [**W20–21**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-20%E2%80%9321-%7C-January-16%E2%80%9331%2C-2026) | Jan 16–31 2026 | Finishing the Prototype |
+| 📘 [**W20–21**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-Week-20%E2%80%9321-%7C-January-16%E2%80%9331%2C-2026) | Jan 16–31 2026 | Verification/signing/submission completion · txId-in-circuit integration · emulator submit + CI stabilization |
+| 📘 [**February 2026 (Closing Report)**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-February-2026-%28Closing-Report%29) | February 2026 | v0.5 flow completed · stream closure/bilan · ZK-circuit roadmap + Intent Layer framing |
 
-## 🧭 Summary
+## 🧭 How to use this wiki
 
-Cavefish aims to demonstrate how **zero-knowledge protocols** and **intent-based transactions** can improve security and efficiency for Cardano light clients.  
-It aligns with the **Technology Validation** framework of *Cardano Vision 2025*, progressively advancing through SRL milestones (SRL 1 → 5) toward a community-ready hand-off.
-
-The project’s evolution is documented through:
-- Bi-weekly progress tracking  
-- Linked CIPs and CPS specifications  
-- Research-to-prototype deliverables  
-- Implementation milestones toward the **100-Day Demo**
+- Use the table below as the timeline of record for the stream.
+- Open each period report for detailed PRs, commits, issues, and decisions.
+- Read the **February 2026 Closing Report** for the final synthesis and open technical questions.
+- For build/run instructions, use the repository and component READMEs (not this wiki home page).
 
 > 🧩 **Maintainers**:  
 > Nicolas Henin · Will Gould · Polina Vinogradova · Kayvan Kazeminejad · Jesus Diaz Vico · Pyrros Chaidos · Marc Roeschlin
 
-*(Last updated · January 2026)*
+*(Last updated · February 2026)*

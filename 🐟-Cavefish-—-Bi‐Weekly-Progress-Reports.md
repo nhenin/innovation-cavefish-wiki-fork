@@ -17,6 +17,8 @@ Each report below summarizes the project’s progress, deliverables, and commits
 | 📘 [**Week 14–15 \| Dec 1 – 15 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/Week-14%E2%80%9315-%7C-December-1%E2%80%9315,-2025) | SP flow refactor · Tracing + config · Tests + CI tightened |
 | 📘 [**Week 16–17 \| Dec 16 – 31 2025**](https://github.com/input-output-hk/innovation-cavefish/wiki/Week-16%E2%80%9317-%7C-December-16%E2%80%9331,-2025) | DemonstrateCommitment nominal case · WBPS modularization · VarLen hashing strategies documented |
 | 📘 [**Week 18–19 \| Jan 1 – 15 2026**](https://github.com/input-output-hk/innovation-cavefish/wiki/Week-18%E2%80%9319-%7C-January-1%E2%80%9315,-2026) | Challenge computation + witness generation · Session persistence · ZK circuit scalability benchmarks |
+| 📘 [**Week 20–21 \| Jan 16 – 31 2026**](https://github.com/input-output-hk/innovation-cavefish/wiki/Week-20%E2%80%9321-%7C-January-16%E2%80%9331%2C-2026) | Verification/signing/submission completion · txId-in-circuit integration · emulator submit + CI stabilization |
+| 📘 [**February 2026 (Closing Report)**](https://github.com/input-output-hk/innovation-cavefish/wiki/%F0%9F%97%93%EF%B8%8F-February-2026-%28Closing-Report%29) | v0.5 flow completed · stream closure/bilan · ZK-circuit roadmap + Intent Layer framing |
 
 ## 🧭 Summary
 
@@ -32,4 +34,4 @@ The project’s evolution is documented through:
 > 🧩 **Maintainers**:  
 > Nicolas Henin · Will Gould · Polina Vinogradova · Kayvan Kazeminejad · Jesus Diaz Vico · Pyrros Chaidos · Marc Roeschlin
 
-*(Last updated · December 2025)*
+*(Last updated · February 2026)*
